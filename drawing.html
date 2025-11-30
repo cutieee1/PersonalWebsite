@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>pucca</title>
+  <style>
+    html,body{height:100%;margin:0;display:flex;align-items:center;justify-content:center;background:#f2f2f2}
+    canvas{background:white;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.1)}
+  </style>
+</head>
+<body>
+  <canvas id="puccaCanvas" width="400" height="400"></canvas>
+
+<script>
+const canvas = document.getElementById('puccaCanvas');
+const ctx = canvas.getContext('2d');
+
+function circleFill(x,y,r,color){
+  ctx.beginPath();
+  ctx.arc(x,y,r,0,Math.PI*2);
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.stroke();
+}
+function circleStroke(x,y,r){
+  ctx.beginPath();
+  ctx.arc(x,y,r,0,Math.PI*2);
+  ctx.stroke();
+}
+
+function draw(){
+  ctx.clearRect(0,0,400,400);
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = "black";
+
+  // hair buns (black)
+  circleFill(120,110,30,"black");
+  circleFill(280,110,30,"black");
+
+  // head (skin)
+  circleFill(200,160,70,"#ffe0c7");
+
+  // eyes (black)
+  circleFill(175,155,8,"black");
+  circleFill(225,155,8,"black");
+
+  // cheeks (pink)
+  circleFill(170,180,10,"#ffb6c1");
+  circleFill(230,180,10,"#ffb6c1");
+
+  // smile (line only)
+  ctx.beginPath();
+  ctx.moveTo(180,190);
+  ctx.lineTo(200,200);
+  ctx.lineTo(220,190);
+  ctx.stroke();
+
+  // body (red)
+  circleFill(200,260,45,"#d60000");
+
+  // arms (skin color)
+  ctx.strokeStyle = "#ffe0c7";
+  ctx.lineWidth = 10;
+  ctx.beginPath(); ctx.moveTo(160,250); ctx.lineTo(120,280); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(240,250); ctx.lineTo(280,280); ctx.stroke();
+
+  // legs (black)
+  ctx.strokeStyle = "black";
+  ctx.lineWidth = 10;
+  ctx.beginPath(); ctx.moveTo(200,300); ctx.lineTo(185,340); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(200,300); ctx.lineTo(215,340); ctx.stroke();
+
+  // shoes (black)
+  circleFill(185,345,7,"black");
+  circleFill(215,345,7,"black");
+}
+
+draw();
+</script>
+</body>
+</html>

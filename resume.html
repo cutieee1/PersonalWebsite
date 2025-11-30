@@ -1,0 +1,190 @@
+<html>
+<head>
+    <title>Cristel C. Rebucan - Online Resume</title>`
+    <style>
+        :root{
+          
+            --card: #ffffff;
+            --accent: #ff6f9c;
+            --muted: #6b6b6b;
+        }
+
+        html,body{height:100%;margin:0;padding:0;font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+        body{
+            background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+            display:flex;
+            align-items:flex-start;
+            justify-content:center;
+            padding:32px;
+            color:#111;
+        }
+
+        .container{
+            width:100%;
+            max-width:980px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.9), var(--card));
+            padding:28px;
+            overflow:hidden;
+            border: 2px solid rgba(255,255,255,0.6);
+            
+        }
+
+        header{
+            display:grid;
+            grid-template-columns: 120px 1fr;
+            gap:20px;
+            align-items:center;
+            margin-bottom:18px;
+        }
+        
+        .profile{
+            width:120px;
+            height:120px;
+            border-radius:16px;
+            object-fit:cover; 
+        }
+        
+        .header-info{ display:flex; flex-direction:column; gap:6px; }
+        h1{
+            margin:0;
+            font-family:"Playfair Display", serif;
+            font-weight:600;
+            font-size:28px;
+            color:#2b0623;
+            letter-spacing:0.2px;
+
+        }
+        
+        .contact{
+            font-size:13px;
+            color: #444;
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px 18px;
+            margin-top:8px;
+
+        }
+
+         nav a{
+            margin:0 10px;text-decoration:none;color:#333;font-weight:600;
+        
+        }
+
+         nav a:hover{
+            color:var(--accent);
+        
+        }
+
+       
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <img src="ttel.jpg" alt="Cristel C. Rebucan" class="profile">
+            <div class="header-info">
+                <div>
+                    <div>
+                        <nav>
+                            <a href="index.html">Main</a>
+                            <a href="about.html">About Me</a>
+                            <a href="experience.html">Experience</a>
+                            <a href="education.html">Educational Background</a>
+                            <a href="drawing.html">Artworks</a>
+                            <a href="resume.html">My resume</a>
+                        </nav>
+                        <br>
+                        <h1>Cristel C. Rebucan</h1>
+                        <div class="subtitle">Aspiring IT / Software Developer • BSIT</div>
+                        <div class="role-pill"><b></b>Documenting • Frontend Developer • Data Analyst<b></b></div>
+                    </div>
+                </div>
+
+                <div class="contact" arial-label="contact">
+                    <div><li>+63-987664321</li></div>
+                    <div><li>rebucancristel1@gmail.com</li></div>
+                    <div><li>Cavite, Philippines</li></div>
+                    <div><li>linkedin.com/in/cristel-rebucan</li></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <br>
+                <h2>Professional Summary</h2>
+                <p>Detail-oriented Information Technology student with hands-on experience in web development, scripting, and IT support. Comfortable working in teams, with a focus on building maintainable web apps and learning cloud/DevOps workflows.</p>
+                <br>
+            </section>
+
+            <section class="two-col">
+                <div class="col">
+                    <h2>Educational Background</h2>
+                        <p><strong>Primary School</strong></p>
+                        <p>Bunga Primary School Graduation: 2013</p>
+                        <p><strong>Elementary School</strong></p>
+                        <p>Maximo V. Pangilinan Elementary School Graduation: 2016</p>
+                        <p><strong>Junior HighSchool</strong></p>
+                        <p>Tanza National Comprehensive HighSchool Graduation: 2020</p>
+                        <p><strong>Senior HighSchool</strong></p>
+                        <p>Tanza National Comprehensive HighSchool Graduation: 2022</p>
+                        <p><strong>College</strong></p>
+                        <p>San Sebastian College Recoletos de Cavite — Expected Graduation: 2027</p>
+
+                    <h2>Skills</h2>
+                    <div class="skills" aria-hidden="false">
+                        <span class="skill">HTML</span><br>
+                        <span class="skill">Python</span><br>
+                        <span class="skill">MySQL</span><br>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h2>Experience</h2>
+                    <span class="label">Intern / IT Assistant — Digital Solution (02/2024 – 08/2024)</span>
+                    <div class="meta">IT support, internal tools, documentation</div>
+                    <ul>
+                        <li>Maintained internal documentation and assisted deploying small web applications.</li>
+                        <li>Collaborated with the team to implement feature enhancements and bug fixes.</li>
+                    </ul>
+
+                    <h2>Projects</h2>
+                    <ul class="project-list">
+                        <li><strong>Online Portfolio</strong> — Personal website showcasing projects and resume. (HTML/CSS/JS)</li>
+                        <li><strong>Inventory Web App</strong> — CRUD app using Flask/PHP and MySQL for managing items.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Certifications  Training</h2>
+                <ul>
+                    <li><b>June 2023</b> – PRDV410: Intro to Java , OOP</li>
+                    <li><b>June 2023</b> – CS101: Programming 1</li>
+                    <li><b>August 2023</b> – CS102: Programming 2</li>
+                    <li><b>October 2023</b> – CS105: Programming 1</li>
+                    <li><b>February 2024</b> – CS201: Data Structures</li>
+                    <li><b>March 2024</b> – CS202: Discrete Structures</li>
+                    <li><b>April 2024</b> – CS302: Software Engineering</li>
+                    <li><b>May 2024</b> – CS401: Operating Systems</li>
+                    <li><b>July 2025</b> – PHIL102: Critical Thinking</li>
+                    <li><b>July 2025</b> – PRDV104: Professional Etiquette</li>
+                    <li><b>August 2025</b> – PRDV214: Org Communication</li>
+                    <li><b>August 2025</b> – BUS200: Business Ethics</li>
+                    <li><b>September 2025</b> – PRDV223: Org Culture , Ethics</li>
+                    <li><b>September 2025</b> – MA121: Statistics</li>
+                    <li><b>November 2025</b> – CS406: Info Security</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            Last updated: 2025
+        </footer>
+    </div>
+</body>
+</html>
